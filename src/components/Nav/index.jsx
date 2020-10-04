@@ -1,13 +1,13 @@
 import React from 'react';
 
-import { Nav } from '../../components';
-
 import { Container } from './styles';
 
-export default function Main() {
+function Nav() {
   return (
     <Container>
-      <Nav />
+      <h1>Menu de navegação</h1>
     </Container>
   );
 }
+
+export default Nav;
