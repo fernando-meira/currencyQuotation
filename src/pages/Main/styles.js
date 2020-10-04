@@ -30,6 +30,54 @@ export const Container = styled.main`
     }
   }
 
+  ${media.greaterThan('1600px')`
+    padding: 120px 280px;
+
+    section {
+
+      > div {
+        max-width: 700px;
+
+        h1 {
+          font-size: 42px;
+        }
+
+        p {
+          margin-top: 28px;
+
+          font-size: 18px;
+        }
+      }
+
+      img {
+        max-width: 490px;
+      }
+    }
+  `}
+
+  ${media.greaterThan('1900px')`
+    section {
+
+      > div {
+        max-width: 830px;
+
+        h1 {
+          font-size: 50px;
+        }
+
+        p {
+          margin-top: 34px;
+
+          font-size: 22px;
+        }
+      }
+
+      img {
+        max-width: 594px;
+      }
+    }
+  `}
+
   ${media.lessThan('large')`
     padding: 50px 78px;
 
