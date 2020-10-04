@@ -1,3 +1,4 @@
 import Main from './Main';
+import Convert from './Convert';
 
-export { Main };
+export { Main, Convert };

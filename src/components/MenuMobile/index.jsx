@@ -9,7 +9,7 @@ function MenuMobile() {
       <div>
         <Link to="/">Main</Link>
 
-        <Link to="/">Converted</Link>
+        <Link to="/convert">Converted</Link>
 
         <Link to="/">About</Link>
       </div>

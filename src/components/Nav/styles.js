@@ -4,9 +4,15 @@ import media from 'styled-media-query';
 import colors from '../../themes/colors';
 
 export const Container = styled.nav`
+  padding: 16px 24px;
+  border-radius: 16px;
+  border: 1px solid ${colors.white};
+
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  background: rgba(0, 0, 0, 0.1);
 
   > div {
     width: 420px;

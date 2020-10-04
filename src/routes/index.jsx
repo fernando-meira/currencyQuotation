@@ -1,7 +1,7 @@
 import React from 'react';
 import { Route, Switch } from 'react-router-dom';
 
-import { Main } from '../pages';
+import { Main, Convert } from '../pages';
 import GlobalStyle from '../themes/global';
 
 export default function Routes() {
@@ -10,6 +10,7 @@ export default function Routes() {
       <GlobalStyle />
       <Switch>
         <Route path="/" exact component={Main} />
+        <Route path="/convert" component={Convert} />
       </Switch>
     </>
   );
