@@ -3,9 +3,8 @@ import styled from 'styled-components';
 import colors from '../../themes/colors';
 
 export const Container = styled.nav`
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
 
   a {
     text-decoration: none;
