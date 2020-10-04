@@ -1,8 +1,8 @@
 import styled from 'styled-components';
+import media from 'styled-media-query';
 
 export const Container = styled.main`
   padding: 60px 90px;
-  overflow: hidden;
 
   section {
     display: flex;
@@ -24,5 +24,96 @@ export const Container = styled.main`
         font-size: 16px;
       }
     }
+
+    img {
+      max-width: 420px;
+    }
   }
+
+  ${media.lessThan('large')`
+    padding: 50px 78px;
+
+    section {
+
+      > div {
+        max-width: 514px;
+
+        h1 {
+          font-size: 30px;
+        }
+
+        p {
+          margin-top: 20px;
+
+          font-size: 14px;
+        }
+      }
+
+      img {
+        max-width: 360px;
+      }
+    }
+  `}
+
+  ${media.lessThan('medium')`
+    padding: 44px 68px;
+
+    section {
+      flex-direction: column;
+
+      > div {
+        margin-top: 2rem;
+        max-width: 100%;
+
+        p {
+          margin-top: 20px;
+
+          font-size: 16px;
+          text-align: justify;
+        }
+      }
+
+      img {
+        margin-top: 2rem;
+
+        max-width: 360px;
+      }
+    }
+  `}
+
+  ${media.lessThan('small')`
+    padding: 1rem;
+
+    section {
+      position: relative;
+
+      flex-direction: column-reverse;
+
+      > div {
+        top: 0;
+        position: absolute;
+
+        max-width: 100%;
+
+        h1 {
+          font-size: 20px;
+          text-align: center;
+        }
+
+        p {
+          margin-top: 20px;
+
+          font-size: 16px;
+          text-align: justify;
+        }
+      }
+
+      img {
+        max-width: 100%;
+        margin-top: 2rem;
+
+        opacity: 0.1;
+      }
+    }
+  `}
 `;

@@ -1,17 +1,38 @@
 import styled from 'styled-components';
+import media from 'styled-media-query';
+import { bubble as Menu } from 'react-burger-menu';
 
 import colors from '../../themes/colors';
 
 export const Container = styled.nav`
-  display: grid;
-  grid-template-columns: 2fr 1fr;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  > div {
+    width: 420px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
 
   a {
     text-decoration: none;
     color: ${colors.white};
-
-    + a {
-      margin-left: 72px;
-    }
   }
+
+  ${media.lessThan('large')`
+
+    > div {
+      width: 360px;
+    }
+  `}
+
+  ${media.lessThan('medium')`
+
+    > div {
+      width: 260px;
+    }
+  `}
 `;

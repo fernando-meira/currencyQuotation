@@ -4,11 +4,12 @@ import { Nav } from '../../components';
 import themeMain from '../../themes/assets/images/themeMain.png';
 
 import { Container } from './styles';
+import { isMobile } from 'react-device-detect';
 
 export default function Main() {
   return (
     <Container>
-      <Nav />
+      {!isMobile && <Nav />}
 
       <section>
         <div>
