@@ -1,6 +1,5 @@
 import styled from 'styled-components';
 import media from 'styled-media-query';
-import { bubble as Menu } from 'react-burger-menu';
 
 import colors from '../../themes/colors';
 

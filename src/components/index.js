@@ -1,3 +1,4 @@
 import Nav from './Nav';
+import MenuMobile from './MenuMobile';
 
-export { Nav };
+export { Nav, MenuMobile };
